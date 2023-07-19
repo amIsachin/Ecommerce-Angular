@@ -1,2 +1,28 @@
 
-<app-product></app-product>
+<mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Osm Ecommerce</span>
+    <span class="example-spacer"></span>
+
+    <a mat-button>Booking</a>
+    <a mat-button>Booking</a>
+    <a mat-button>Booking</a>
+    <a mat-button>Booking</a>
+
+</mat-toolbar>
+
+<main>
+    <router-outlet></router-outlet>
+</main>
+
+<footer>
+    <mat-toolbar class="color-greay">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <h3>Osm Ecommerce</h3>
+      </button>
+      <span class="example-spacer"></span>
+      <a mat-button>Powered by Osm Ecommerce ©2010-2023.</a>
+    </mat-toolbar>
+  </footer>
