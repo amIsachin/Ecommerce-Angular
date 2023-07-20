@@ -6,17 +6,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductModule } from './src/Modules/product/product.module';
 import { UesrModule } from './src/Modules/uesr/uesr.module';
 import { RouterModule, Routes } from '@angular/router';
-import { ProductComponent } from './src/Modules/product/product.component';
 import { HttpClientModule } from '@angular/common/http';
 
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
-
-const routes: Routes = [
-  { path: 'all-products', component: ProductComponent }
-]
+import { AppRoutingModule } from './app-routing.module';
+import { HomeModule } from './src/Modules/home/home.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +28,8 @@ const routes: Routes = [
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    RouterModule.forRoot(routes)
+    AppRoutingModule,
+    HomeModule
   ],
   exports: [RouterModule],
   providers: [],
