@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class HeroSectionComponent {
 
+  public heroImage = '.../app/assets/assets/hero.png';
+
 }
