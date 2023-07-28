@@ -14,6 +14,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeModule } from './src/Modules/home/home.module';
+import { BookProductModule } from './src/Modules/book-product/book-product.module';
+import { ShareModule } from './src/Modules/share/share.module';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { HomeModule } from './src/Modules/home/home.module';
     MatIconModule,
     MatButtonModule,
     AppRoutingModule,
-    HomeModule
+    HomeModule,
+    BookProductModule,
   ],
   exports: [RouterModule],
   providers: [],

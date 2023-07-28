@@ -14,7 +14,7 @@
                 <h3>Product description is <strong>{{product.description}}</strong> </h3>
             </mat-card-content>
             <mat-card-actions>
-                <button mat-raised-button color="primary">By now</button>
+                <a [routerLink]="['/book/book-now', product.productId]" mat-raised-button color="primary">By now</a>
             </mat-card-actions>
         </mat-card>
     </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { ProductService } from 'src/app/src/Application/Repository/product.service';
 import { productEntity } from 'src/app/src/Domain/Entities/Product';
 
@@ -22,7 +23,6 @@ export class CardsComponent implements OnInit {
    */
   public getAllProducts() {
     this._productService.getallProducts().subscribe(response => {
-      console.log (response)
       this.productEntity = response;
     });
   }

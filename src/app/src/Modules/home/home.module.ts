@@ -9,6 +9,8 @@ import { MatCardModule } from '@angular/material/card';
 import { CardsComponent } from './Components/cards/cards.component';
 import { MatButtonModule } from '@angular/material/button';
 
+import {MatDialogModule} from '@angular/material/dialog';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { MatButtonModule } from '@angular/material/button';
     CommonModule,
     HomeRoutingModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule
   ],
   exports: [HeroSectionComponent, CardsComponent]
 })
